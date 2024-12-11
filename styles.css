@@ -110,7 +110,7 @@ button {
     color: aliceblue;
     background-color: rgb(33, 167, 160);
 }
-/* .container {
+.container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -119,4 +119,4 @@ button {
     align-items: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
-} */
+}
