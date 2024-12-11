@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+GB+S:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font */
+  font-family: playwrite de grund, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url(./img/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    min-width: 350px;
+    height: 80vh;
+    background-image: url(./img/Background.jpg);
+    background-size: cover;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 600;
+    color: rgb(8, 7, 83);
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.text {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgb(8, 17, 34);
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+
+.input_container input {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 1.5px solid rgb(8, 17, 34);
+    margin: 0 10px;
+    color: rgba(8, 17, 34, 0.377);
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: rgb(8, 17, 34);
+    border-bottom: 1.5px solid rgb(8, 17, 34);
+}
+
+.valid {
+    width: 55px;
+    outline: none;
+    height: 55px;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: rgb(8, 17, 34);
+    border-bottom: 1.5px solid rgb(8, 17, 34);
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font: inherit;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgb(33, 167, 160);
+}
+/* .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
