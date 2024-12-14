@@ -1,17 +1,20 @@
 const pop_up = document.querySelector('.pop-up');
 const customAlert = document.querySelector('.alert');
-let alert_theme = document.querySelector("html").getAttribute("alert-theme");
+customAlert.style.display = "none"; 
 let alertType = document.querySelector(".alertType");
 const alertMessage = document.querySelector(".message");   
 
 // using function constructor
 function toggleAlert(message, type, theme){
-    alertMessage.textContent = message
-    alertType.textContent = type
-    alert_theme = theme
+    let alert_theme = document.querySelector("html")
+    alertMessage.textContent = message;
+    alertType.textContent = type;
+    alert_theme.setAttribute("alert_theme",theme)
     customAlert.classList.add("animate")
+    customAlert.style.display = "flex";
     setTimeout(()=>{
         customAlert.classList.remove("animate")
+        customAlert.style.display = "none";
     }, 5000)
 }
 
@@ -72,7 +75,7 @@ submit.addEventListener('click', function(){
     } else {
         for (let i = 0; i < inputs.length; i++){
             if(inputs[i].value == ''){
-                toggleAlert("Please fill in all fields", "Error", "error")  
+                toggleAlert("Please Fill all Inputs", "Error", "error")  
                 break;
             }
         }

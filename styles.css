@@ -165,6 +165,11 @@ button {
 
 /* alert */
 [alert_theme = "error"] {
+    --bg: rgb(209, 34, 34);
+    --clr: rgb(240, 252, 251);
+}
+
+[alert_theme = "success"] {
     --bg: rgb(42, 180, 173);
     --clr: rgb(240, 252, 251);
 }
@@ -182,7 +187,7 @@ button {
     display: none;
 }
 
-.alert span, .aleert strong {
+.alert span, .alert strong {
     font-size: 1em;
     font-weight: 500;
     margin-left: 10px;
