@@ -162,3 +162,32 @@ button {
         opacity: 0.1;
     }
 }
+
+/* alert */
+[alert_theme = "error"] {
+    --bg: rgb(42, 180, 173);
+    --clr: rgb(240, 252, 251);
+}
+
+.alert {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: var(--bg);
+    color: var(--clr);
+    top: 20px;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+.alert span, .aleert strong {
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.alert .close-btn {
+    cursor: pointer;
+}
