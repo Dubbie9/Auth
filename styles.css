@@ -170,7 +170,7 @@ button {
 }
 
 [alert_theme = "success"] {
-    --bg: rgb(42, 180, 173);
+    --bg: rgb(112, 235, 228);
     --clr: rgb(240, 252, 251);
 }
 
